@@ -11,22 +11,26 @@ class Person extends Component{
         };
     }
 
-    changePerson(){
-        alert('teste!');
+    changePerson = () => {
+        this.setState({
+            name: "Tuliane",
+            age: 46,
+            genre: 'f',
+        });
     }
 
     render(props){
         let artigo;
-        if (this.state.genre =='m'){
+        if (this.state.genre ==='m'){
             artigo = 'o';
-        }else if(this.state.genre =='f'){
+        }else if(this.state.genre ==='f'){
             artigo = 'a';
         }
 
         return(
             <div>
-                <p>Eu sou {artigo} {this.state.name} e tenho {this.state.age} anos </p> n
-                <button type='button' onAuxClick={this.changePerson}>Mudar Pessoa</button>
+                <p>Eu sou {artigo} {this.state.name} e tenho {this.state.age} anos </p>
+                <button type="button" onClick={this.changePerson}>Mudar Pessoa</button>
             </div>
         );
     }

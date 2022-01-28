@@ -8,6 +8,7 @@ function App() {
         <center>
         <h1>Componente pessoa: </h1>
         <Person name="Wendel Tadeu" age={49} genre='m' />
+        </center>
       </div>
    )
 }
