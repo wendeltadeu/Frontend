@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import { UsuarioEntrada } from './UsuarioEntrada';
 
 function App() {
   return (
-    <div className="App">
-     
-      <input type="text" name="input" value="Digite aqui"></input>
-     
+    <div>
+     <UsuarioEntrada/>
+           
     </div>     
   );
 }
