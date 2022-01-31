@@ -1,10 +1,9 @@
-function UsuarioSaida() {
+export function UsuarioSaida() {
     return (
       <div>
-       
-        <p>Nome Usuário: Wendel</p>
-        <p>Tarefa de Frontend</p>
+        <p>Nome: Wendel</p>
+        <p>Tarefa de Frontend componente Login</p>
        
       </div>     
     );
-  }
+}
